@@ -3,7 +3,7 @@
 module TB ();
 
     reg clk=1'b0, rst=1'b1, start=1'b0;
-    reg [3:0] entry = 4'd6;
+    reg [3:0] entry = 4'd15;
     wire load_init;
     wire updater;
     wire alu;
@@ -16,7 +16,7 @@ module TB ();
     wire done;
     wire backtrack;
     wire cal_update;
-    wire [7:0] result;
+    wire [20:0] result;
 
     Controller c(
     clk,
@@ -63,7 +63,8 @@ module TB ();
 
     initial begin
         #40 rst = 1'b0; start = 1'b1;
-    	#2000 $stop;
+        #100 start = 1'b0;
+    	#20000 $stop;
     end
 
 endmodule

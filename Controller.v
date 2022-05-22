@@ -66,7 +66,7 @@ module Controller (
             Idle:       ns = Initer;
             Initer:     ns = Mult;
             Mult:       ns = Stack;
-            Stack:      ns = updated ? ALU : Stack;
+            Stack:      ns = ALU;
             ALU:        ns = Back;
             Back:       ns = backtrack ? Pop : Update;
             Pop:        ns = done ? Done : Poper;
@@ -82,6 +82,7 @@ module Controller (
         {load_init, updater, alu, cal_res, res_updater, poping, dont_check, push} = 0;
         case (ps)
             Start: begin
+                dont_check = 1'b1;
 
             end
             Idle: begin
@@ -93,10 +94,13 @@ module Controller (
                 
             end
             Mult: begin
-                push = 1'b1;
+                dont_check = 1'b1;
             end
+            
             Stack: begin
+                dont_check = 1'b1;
                 updater = 1'b1;
+                push = 1'b1;
             end
             ALU: begin
                 alu = 1'b1;

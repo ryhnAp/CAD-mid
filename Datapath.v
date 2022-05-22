@@ -40,7 +40,7 @@ module Datapath (
     output done;
     output backtrack;
     output cal_update;
-    output [2*size-1:0] result;
+    output [5*size:0] result;
 
 
     wire [size-1:0] n;
@@ -53,11 +53,11 @@ module Datapath (
     wire [size-1:0] multi3_in;
     wire [size-1:0] rm2;
     wire [size-1:0] rm3;
-    reg [size-1:0] stack [stack_length-1:0];
+    reg [size-1:0] stack [stack_length:0];
     reg [stack_length-1:0] stack_right;
     reg [max_length-1:0] visited;
-    reg [2*size-1:0] value [max_length-1:0];
-    wire [2*size-1:0] multres;
+    reg [5*size-1:0] value [max_length:0];
+    wire [5*size-1:0] multres;
     wire [stack_digit-1:0] stack_size;
     wire [stack_digit-1:0] update_size;
     wire [stack_digit-1:0] updater_size;
@@ -93,12 +93,16 @@ module Datapath (
             if (updater) begin
                 visited[multi2_idx] <= 1'b1;
             end
-            if (alu) begin
-                stack[stack_size-7'd3] <= ass2 ;
-                stack[stack_size-7'd1] <= ass3 ;
-                stack[stack_size-7'd2] <= assM2 ;
-                stack[stack_size] <= assM3 ;
-                stack_right[stack_size] <= assW ;            
+            if (push) begin
+                if (stack_size-7'd1 == 0) begin
+                end
+                else begin
+                    stack[stack_size-7'd3] <= ass2 ;
+                    stack[stack_size-7'd1] <= ass3 ;
+                    stack[stack_size-7'd2] <= assM2 ;
+                    stack[stack_size] <= assM3 ;
+                    stack_right[stack_size] <= assW ;            
+                end
             end
             if (bt2) begin
                 value[multi2_idx] <= {4'd0,rm2};
@@ -119,7 +123,9 @@ module Datapath (
         .result(rm3), .done(d3), .backtrack(bt3));
 
     assign done = (dont_check == 1'b0) & (stack_size==1'b1) & (load_init==1'b0);
-    assign backtrack = bt3 | bt2;
+    // assign backtrack = bt3 & bt2;
+
+    Register #(1) backtrackerReg(.clk(clk), .rst(rst), .en(bt3 & bt2), .pi(1'b1), .po(backtrack));
 
     assign multres = two*value[multi2_idx] + three*value[multi3_idx];
 
