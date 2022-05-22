@@ -15,7 +15,8 @@ module Controller (
     cal_res,
     res_updater,
     poping,
-    dont_check
+    dont_check,
+    push
 );
 
     input clk, rst;
@@ -32,6 +33,7 @@ module Controller (
     output reg res_updater;
     output reg poping;
     output reg dont_check;
+    output reg push;
     
 
     parameter [3:0] 
@@ -77,7 +79,7 @@ module Controller (
     end
 
     always @(ps) begin
-        {load_init, updater, alu, cal_res, res_updater, poping, dont_check} = 0;
+        {load_init, updater, alu, cal_res, res_updater, poping, dont_check, push} = 0;
         case (ps)
             Start: begin
 
@@ -91,7 +93,7 @@ module Controller (
                 
             end
             Mult: begin
-
+                push = 1'b1;
             end
             Stack: begin
                 updater = 1'b1;

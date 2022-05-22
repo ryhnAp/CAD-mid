@@ -11,6 +11,7 @@ module Datapath (
     res_updater,
     poping,
     dont_check,
+    push,
 
     updated,
     done,
@@ -33,6 +34,7 @@ module Datapath (
     input res_updater;
     input poping;
     input dont_check;
+    input push;
 
     output updated;
     output done;

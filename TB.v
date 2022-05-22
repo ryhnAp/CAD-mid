@@ -10,6 +10,8 @@ module TB ();
     wire cal_res;
     wire res_updater;
     wire poping;
+    wire dont_check;
+    wire push;
     wire updated;
     wire done;
     wire backtrack;
@@ -32,7 +34,8 @@ module TB ();
     cal_res,
     res_updater,
     poping,
-    dont_check
+    dont_check,
+    push
     );
 
     Datapath dp(
@@ -47,6 +50,7 @@ module TB ();
     res_updater,
     poping,
     dont_check,
+    push,
 
     updated,
     done,
