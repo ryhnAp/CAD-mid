@@ -1,0 +1,43 @@
+F:/semester6/CAD/quiz/code/AddSub.v {1 {vlog -work work -stats=none F:/semester6/CAD/quiz/code/AddSub.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module AddSub
+
+Top level modules:
+	AddSub
+
+} {} {}} F:/semester6/CAD/quiz/code/Initer.v {1 {vlog -work work -stats=none F:/semester6/CAD/quiz/code/Initer.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Initer
+
+Top level modules:
+	Initer
+
+} {} {}} F:/semester6/CAD/quiz/code/Controller.v {1 {vlog -work work -stats=none F:/semester6/CAD/quiz/code/Controller.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Controller
+
+Top level modules:
+	Controller
+
+} {} {}} F:/semester6/CAD/quiz/code/Register.v {1 {vlog -work work -stats=none F:/semester6/CAD/quiz/code/Register.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module Register
+
+Top level modules:
+	Register
+
+} {} {}} F:/semester6/CAD/quiz/code/TB.v {1 {vlog -work work -stats=none F:/semester6/CAD/quiz/code/TB.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module TB
+
+Top level modules:
+	TB
+
+} {} {}} F:/semester6/CAD/quiz/code/ALU.v {1 {vlog -work work -stats=none F:/semester6/CAD/quiz/code/ALU.v
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module ALU
+
+Top level modules:
+	ALU
+
+} {} {}}

@@ -1,0 +1,179 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dF:/semester6/CAD/hw/1/code
+vAddSub
+Z0 !s110 1653187561
+!i10b 1
+!s100 TF^<eIPDH40LmTMNzX`MS1
+Z1 !s11b Dg1SIo80bB@j0V0VzS_@n1
+InCb@HOch<]`a]Dk_2Og_J2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+Z3 dF:/semester6/CAD/quiz/code
+w1653178979
+8F:/semester6/CAD/quiz/code/AddSub.v
+FF:/semester6/CAD/quiz/code/AddSub.v
+!i122 54
+L0 2 22
+Z4 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z5 !s108 1653187561.000000
+!s107 F:/semester6/CAD/quiz/code/AddSub.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/semester6/CAD/quiz/code/AddSub.v|
+!i113 1
+Z6 o-work work
+Z7 tCvgOpt 0
+n@add@sub
+vALU
+R0
+!i10b 1
+!s100 D5Le_1S<DUnF5jI0W<gHg2
+R1
+I2ANA_K=V^hK`7lA`K2j:e0
+R2
+R3
+w1653170586
+8F:/semester6/CAD/quiz/code/ALU.v
+FF:/semester6/CAD/quiz/code/ALU.v
+!i122 55
+L0 2 46
+R4
+r1
+!s85 0
+31
+R5
+!s107 F:/semester6/CAD/quiz/code/ALU.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/semester6/CAD/quiz/code/ALU.v|
+!i113 1
+R6
+R7
+n@a@l@u
+vController
+Z8 !s110 1653187562
+!i10b 1
+!s100 U7A4l`E<J_kPN9OV:igoO2
+R1
+Ic6AB4?YWWoP;8Y2f_588_2
+R2
+R3
+w1653179524
+8F:/semester6/CAD/quiz/code/Controller.v
+FF:/semester6/CAD/quiz/code/Controller.v
+!i122 56
+L0 2 115
+R4
+r1
+!s85 0
+31
+Z9 !s108 1653187562.000000
+!s107 F:/semester6/CAD/quiz/code/Controller.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/semester6/CAD/quiz/code/Controller.v|
+!i113 1
+R6
+R7
+n@controller
+vDatapath
+!s110 1653197354
+!i10b 1
+!s100 cK2I[B>3I1TFh<C:J?eC53
+R1
+IHdBVg`0QM2Z0PmNYc@Q]H0
+R2
+R3
+w1653197315
+8F:/semester6/CAD/quiz/code/Datapath.v
+FF:/semester6/CAD/quiz/code/Datapath.v
+!i122 67
+L0 2 145
+R4
+r1
+!s85 0
+31
+!s108 1653197354.000000
+!s107 F:/semester6/CAD/quiz/code/Datapath.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/semester6/CAD/quiz/code/Datapath.v|
+!i113 1
+R6
+R7
+n@datapath
+vIniter
+R8
+!i10b 1
+!s100 CgeTMPTDdl92UOVLCOkWh0
+R1
+I:SlBXVXSU58?Rk6P:;f]U0
+R2
+R3
+w1653137539
+8F:/semester6/CAD/quiz/code/Initer.v
+FF:/semester6/CAD/quiz/code/Initer.v
+!i122 58
+L0 2 24
+R4
+r1
+!s85 0
+31
+R9
+!s107 F:/semester6/CAD/quiz/code/Initer.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/semester6/CAD/quiz/code/Initer.v|
+!i113 1
+R6
+R7
+n@initer
+vRegister
+R8
+!i10b 1
+!s100 Qo[Y_dBcnjY]F0CR4MQ8Z2
+R1
+IeHS57?TVoz[gWW2WM6V^A2
+R2
+R3
+w1653172129
+8F:/semester6/CAD/quiz/code/Register.v
+FF:/semester6/CAD/quiz/code/Register.v
+!i122 59
+L0 2 21
+R4
+r1
+!s85 0
+31
+R9
+!s107 F:/semester6/CAD/quiz/code/Register.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/semester6/CAD/quiz/code/Register.v|
+!i113 1
+R6
+R7
+n@register
+vTB
+!s110 1653187563
+!i10b 1
+!s100 Jz^052X:E^LUGkVfKDHSg1
+R1
+I4@@_n7;1a0=L?gjmZ6]lZ1
+R2
+R3
+w1653176198
+8F:/semester6/CAD/quiz/code/TB.v
+FF:/semester6/CAD/quiz/code/TB.v
+!i122 60
+L0 3 61
+R4
+r1
+!s85 0
+31
+R9
+!s107 F:/semester6/CAD/quiz/code/TB.v|
+!s90 -reportprogress|300|-work|work|-stats=none|F:/semester6/CAD/quiz/code/TB.v|
+!i113 1
+R6
+R7
+n@t@b
