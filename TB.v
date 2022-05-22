@@ -31,7 +31,8 @@ module TB ();
     alu,
     cal_res,
     res_updater,
-    poping
+    poping,
+    dont_check
     );
 
     Datapath dp(
@@ -45,6 +46,7 @@ module TB ();
     cal_res,
     res_updater,
     poping,
+    dont_check,
 
     updated,
     done,

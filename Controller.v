@@ -14,7 +14,8 @@ module Controller (
     alu,
     cal_res,
     res_updater,
-    poping 
+    poping,
+    dont_check
 );
 
     input clk, rst;
@@ -30,6 +31,8 @@ module Controller (
     output reg cal_res;
     output reg res_updater;
     output reg poping;
+    output reg dont_check;
+    
 
     parameter [3:0] 
         Start = 4'd0,
@@ -74,15 +77,17 @@ module Controller (
     end
 
     always @(ps) begin
-        {load_init, updater, alu, cal_res, res_updater, poping} = 0;
+        {load_init, updater, alu, cal_res, res_updater, poping, dont_check} = 0;
         case (ps)
             Start: begin
 
             end
             Idle: begin
                 load_init = 1'b1;
+                dont_check = 1'b1;
             end
             Initer: begin
+                dont_check = 1'b1;
                 
             end
             Mult: begin
